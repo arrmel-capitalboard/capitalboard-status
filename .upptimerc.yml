@@ -1,0 +1,30 @@
+# Change these first
+owner: arrmel-capitalboard # Your GitHub organization or username, where this repository lives
+repo: capitalboard-status # The name of this repository
+
+sites:
+  - name: Site (capitalboard.fr)
+    url: https://capitalboard.fr
+  - name: Application
+    url: https://capitalboard.fr/app.html
+  - name: API (Worker)
+    url: https://api.capitalboard.fr/health
+
+status-website:
+  # Sous-domaine dédié — nécessite un enregistrement DNS CNAME côté
+  # capitalboard.fr pointant vers arrmel-capitalboard.github.io
+  cname: status.capitalboard.fr
+  logoUrl: https://capitalboard.fr/assets/logo.png
+  name: Capital Board — Status
+  introTitle: "**Capital Board** — état des services en temps réel."
+  introMessage: Suivi automatique de la disponibilité du site, de l'application et de l'API, généré par GitHub Actions (vérification toutes les 5 minutes). Voir aussi notre [page sécurité](https://capitalboard.fr/legal/securite.html).
+  navbar:
+    - title: Status
+      href: /
+    - title: Capital Board
+      href: https://capitalboard.fr
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+# Upptime supporte aussi les notifications (Discord, email, etc.) — pas
+# configuré ici, à ajouter plus tard si besoin : https://upptime.js.org/docs/configuration
